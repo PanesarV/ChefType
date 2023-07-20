@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
+}
+
+
+.container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 2px 0;
+    padding: 10px;
+    outline:none;
+    font-size:16px;
+}
+form button{
+    padding: 15px;
+    color: #ff7878;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+
+.wrapper{
+    width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 35px;
+}
+.wrapper .input-field{
+    z-index: -999;
+    opacity: 0;
+    position: absolute;
+}
+.wrapper .content-box{
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.typing-text p{
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+.typing-text p span.active{
+    color: #17a2b8;
+}
+.typing-text p span.active::before{
+    content: "";
+    position:absolute;
+    left:0;
+    bottom: 0;
+    height:2px;
+    width: 100%;
+    background: #17a2b8;
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+}
+typing-text p span{
+    position: relative;
+
+}
+.typing-text p span.correct{
+    color: #56964f;
+}
+.typing-text p span.incorrect{
+    color: #cb3439;
+    background: #ffc0cb;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+}
+.content-box .typing-text{
+    max-height: 255px;
+    overflow-y: auto;
+}
+.typing-test::-webkit-scrollbar{
+    width:0;
+}
+.content button{
+    border:none;
+    outline:none;
+    width:105px;
+    padding: 8px 0;
+    background: #17a2b8;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+.content .result-details{
+    display:flex;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+}
+.content-box .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top:17px;
+    padding: 12px 0;
+    border-top:1px solid #ccc;
+}
+.result-details li{
+    height: 22px;
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+.result-details li span{
+    display:block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.result-details li:not(:first-child){
+    border-left: 1px solid #ccc;
+    padding-left:22px;
+}
+.result-details p{
+    font-size: 19px;
+}
+.result-details li:not(:first-child) span{
+    font-weight:500;
+}
+.result-details li b{
+    font-weight: 500;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Typing Test | Vishav Panesar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="wrapper">
+            <div class="titleName">
+            <h1>Chef Type</h1>
+            </div>
+            <input type="text" class="input-field">
+            <div class="content-box">
+                <div class="typing-text">
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="content">
+                    <ul class="result-details">
+                        <li class="time">
+                            <p>Time Left:</p>
+                            <span><b>60</b>s</span>
+                        </li>
+                        <li class="mistake">
+                            <p>Mistakes:</p>
+                            <span>0</span>
+                        </li>
+                        <li class="wpm">
+                            <p>WPM:</p>
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button>Try Again</button>
+                </div>
+            </div>
+        </div>
+        <script src="typing-test.js/paragraphs.js"></script>
+    <script src="typing-test.js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<!--      <div class="contact-form">
+            <form id="contactForm" onsubmit="sendEmail(event); reset(); return false;">
+                <h3>Contact Me!</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="typing-test.js/paragraphs.js"></script>
+    <script src="typing-test.js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+            contactForm.addEventListener("click", (event) => {
+                 event.stopPropagation();
+            });
+
+            function sendEmail(event){
+                event.preventDefault();
+                Email.send({
+                 Host : "smtp.gmail.com",
+                 Username : "v.panesar01@gmail.com",
+                 Password : "Snake919653@!",
+                 To : 'v.panesar01@gmail.com',
+                 From : document.getElementById("email").value,
+                 Subject : "New Contact Form Enquiry",
+                 Body : "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+                resetForm();
+            }
+            function resetForm() {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+            }
+        </script>
+    </body>
+</html>
