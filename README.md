@@ -1,2 +1,0 @@
-# ChefType
-Typing Test
